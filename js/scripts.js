@@ -20,6 +20,67 @@ var numberSplitter = function(numberInput) {
   }
 
 }
+///// fourthDigit /////
+var fourthDigit = function(digit) {
+  digit = numberArray [0];
+  if (digit === "0") {
+    alert("fourth digit = 0");
+} else if (digit === "1") {
+  alert("M");
+  alert(romanArray);
+  romanArray.push("M");
+} else if (digit === "2") {
+  alert("MM");
+  romanArray.push("MM");
+  alert(romanArray);
+} else if (digit === "3") {
+  alert("MMM");
+  romanArray.push("MMM");
+  alert(romanArray);
+}
+  else {
+  alert("doooom!");
+}
+}
+///// thirdDigit /////
+var thirdDigit = function(digit) {
+  digit = numberArray [1];
+  if (digit === "0") {
+    alert("third digit = 0");
+} else if (digit === "1") {
+  alert("C");
+  alert(romanArray);
+  romanArray.push("C");
+} else if (digit === "2") {
+  alert("CC");
+  romanArray.push("CC");
+  alert(romanArray);
+} else if (digit === "3") {
+  alert("CCC");
+  romanArray.push("CCC");
+  alert(romanArray);
+} else if (digit === "4") {
+  romanArray.push("CD");
+  alert(romanArray);
+} else if (digit === "5") {
+  romanArray.push("D");
+  alert(romanArray);
+} else if (digit === "6") {
+  romanArray.push("DC");
+  alert(romanArray);
+} else if (digit === "7") {
+  romanArray.push("DCC");
+  alert(romanArray);
+} else if (digit === "8") {
+  romanArray.push("DCCC");
+  alert(romanArray);
+} else if (digit === "9") {
+  romanArray.push("CM");
+  alert(romanArray);
+} else {
+alert("doooom!");
+}
+}
 
 
 ///// penultimateDigit ///
@@ -41,22 +102,22 @@ var penultimateDigit = function(digit) {
   romanArray.push("XXX");
   alert(romanArray);
 } else if (digit === "4") {
-  romanArray.push("IL");
+  romanArray.push("XL");
   alert(romanArray);
 } else if (digit === "5") {
   romanArray.push("L");
   alert(romanArray);
 } else if (digit === "6") {
-  romanArray.push("LI");
+  romanArray.push("LX");
   alert(romanArray);
 } else if (digit === "7") {
-  romanArray.push("LII");
+  romanArray.push("LXX");
   alert(romanArray);
 } else if (digit === "8") {
-  romanArray.push("LIII");
+  romanArray.push("LXXX");
   alert(romanArray);
 } else if (digit === "9") {
-  romanArray.push("IC");
+  romanArray.push("XC");
   alert(romanArray);
 }
   else {
@@ -129,6 +190,8 @@ $(document).ready(function(){
   // alert("numberArray; " + numberArray);
   // alert("rightmostDigit" + numberArray[0]);
   ///// rightmost digit ////
+  fourthDigit(numberArray[0]);
+  thirdDigit(numberArray[1]);
   penultimateDigit(numberArray[2]);
   rightmostDigit(numberArray[3]);
   alert(romanArray);
