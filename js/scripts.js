@@ -178,24 +178,33 @@ var rightmostDigit = function(digit) {
 /////////////UI////////////
 $(document).ready(function(){
   alert("hello!");
-  numberInput = prompt("input a number");
-  // numberInput = numberInput / 1000;
-  // alert("numberInput: " + numberInput);
-  numberArray = numberInput.split("");
-  console.log("numberArray " + numberArray);
-  numberSplitter(numberInput);
-  // numberArray = numberArrayNR.reverse();
-  console.log("numberArray " + numberArray);
+  $("#userInputer form").submit(function(event){
+    // numberInput = prompt("input a number");
 
-  // alert("numberArray; " + numberArray);
-  // alert("rightmostDigit" + numberArray[0]);
-  ///// rightmost digit ////
-  fourthDigit(numberArray[0]);
-  thirdDigit(numberArray[1]);
-  penultimateDigit(numberArray[2]);
-  rightmostDigit(numberArray[3]);
-  alert(romanArray);
-  romanNumeral = romanArray.join("");
-  alert(romanNumeral);
+    numberInput = $("input#inputer").val();
+    alert("hello! from jQuery");
+    // numberInput = numberInput / 1000;
+
+    alert("numberInput: " + numberInput);
+    numberArray = numberInput.split("");
+    console.log("numberArray " + numberArray);
+    numberSplitter(numberInput);
+    // numberArray = numberArrayNR.reverse();
+    console.log("numberArray " + numberArray);
+
+    // alert("numberArray; " + numberArray);
+    // alert("rightmostDigit" + numberArray[0]);
+    ///// rightmost digit ////
+    fourthDigit(numberArray[0]);
+    thirdDigit(numberArray[1]);
+    penultimateDigit(numberArray[2]);
+    rightmostDigit(numberArray[3]);
+    alert(romanArray);
+    romanNumeral = romanArray.join("");
+    alert(romanNumeral);
+    $("#numeralOutput").text(romanNumeral);
+    event.preventDefault();
+  });
+
 
 });
