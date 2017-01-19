@@ -36,7 +36,7 @@ _Javascript and JQuery_
 |2    | Numbers one through 9 are translated| 4 | IV        |
 |3    | Numbers ten through 99 are translated| 46 | XLVI    |
 |4    | numbers 100 through 3999 are translated| 2345 |XLVIMMCCCXLV|
-|5    | HTML, CSS styling and UI are functional|      |            |
+|5    | HTML, CSS styling and UI are functional|  N/A | N/A   |
 
 ### License
 
