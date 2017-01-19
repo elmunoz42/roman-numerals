@@ -6,10 +6,15 @@ var romanArray = [];
 ///// rightmost digit ////
 var rightmostDigit = function(digit) {
   digit = numberArray [0];
-  if (digit < 1) {
+  if (digit === "0") {
     alert("first digit = 0");
-    return digit;
-  } else {}
+
+  } else if (digit === "1") {
+    alert("I");
+    romanArray.push("I");
+  } else {
+    alert("doooom!");
+  }
 }
 
 
