@@ -182,6 +182,8 @@ $(document).ready(function(){
     // numberInput = prompt("input a number");
 
     numberInput = $("input#inputer").val();
+    numberArray.splice(0,numberArray.length); /// clears the array
+    romanArray.splice(0,romanArray.length); /// clears the romanArr
     alert("hello! from jQuery");
     // numberInput = numberInput / 1000;
 

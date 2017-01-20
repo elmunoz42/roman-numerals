@@ -22,7 +22,7 @@ _Roman numerals don't go above 3999_
 
 ## Support and contact details
 
-_contact Carlos at 617-780-8362_
+_Contact Carlos at elmunoz42@gmail.com_
 
 ## Technologies Used
 
@@ -35,7 +35,7 @@ _Javascript and JQuery_
 |1    | Number zero returns nothing| 0     | (no action)    |
 |2    | Numbers one through 9 are translated| 4 | IV        |
 |3    | Numbers ten through 99 are translated| 46 | XLVI    |
-|4    | numbers 100 through 3999 are translated| 2345 |XLVIMMCCCXLV|
+|4    | numbers 100 through 3999 are translated| 2345 |MMCCCXLV|
 |5    | HTML, CSS styling and UI are functional|  N/A | N/A   |
 
 ### License
